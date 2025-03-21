@@ -1,0 +1,95 @@
+@import "./reset.css";
+
+a {
+	color: rgb(115, 209, 209);
+}
+
+main .section-1 {
+	color: rgb(235, 235, 20);
+}
+
+.section-2 > p {
+	color: rgb(255, 145, 0);
+}
+
+main .section-3 {
+	color: tomato;
+}
+
+.section-4  p {
+	color: blueviolet;
+}
+
+h1 {
+	color: chocolate;
+}
+
+.section-1, .city {
+	color: blue;
+}
+
+.section-2 .city {
+	color: palevioletred;
+}
+
+.section-3, .city {
+	color: yellowgreen;
+}
+
+.section-4 .city {
+	color: orange;
+}
+
+[class*="sub"] {
+	color: rgb(177, 115, 70);
+}
+
+#south > h2 {
+	color:rgb(65, 81, 172);
+}
+
+#north,h2 {
+	color: rgb(158, 52, 52);
+}
+
+#west > h2 {
+	color:orange;
+}
+
+#east h2 {
+	color: green;
+}
+
+/* перший рівень вкладеності */
+
+ul > li {
+	color: red;
+}
+
+ul > li ~ li {
+	color: green;
+}
+
+/* другий рівень вкладеності */
+
+ ul > li > ul > li {
+	color: blue;
+}
+
+ul > li > ul > li ~ li {
+	color: orangered;
+}
+
+/* третій рівень вкладеності */
+
+ul > li > ul > li > ol > li {
+	color: #4597f7;
+}
+
+ul > li > ul > li > ol > li ~ li {
+	color: #5d5d5d;
+}
+
+footer {
+	color:rgb(65, 81, 172);
+}
