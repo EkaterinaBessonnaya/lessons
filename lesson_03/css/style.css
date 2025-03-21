@@ -60,36 +60,6 @@ h1 {
 	color: green;
 }
 
-/* перший рівень вкладеності */
-
-ul > li {
-	color: red;
-}
-
-ul > li ~ li {
-	color: green;
-}
-
-/* другий рівень вкладеності */
-
- ul > li > ul > li {
-	color: blue;
-}
-
-ul > li > ul > li ~ li {
-	color: orangered;
-}
-
-/* третій рівень вкладеності */
-
-ul > li > ul > li > ol > li {
-	color: #4597f7;
-}
-
-ul > li > ul > li > ol > li ~ li {
-	color: #5d5d5d;
-}
-
 footer {
 	color:rgb(65, 81, 172);
 }
