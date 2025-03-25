@@ -1,0 +1,129 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url("fonts.css");
+
+body {
+	font-family: "ZillaSlab", serif;
+}
+
+.navigation {
+	font-family: "Amatic SC", sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	text-align: right;
+	color: #bb2d2d;
+}
+
+.navigation > a {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-transform: uppercase;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 40px;
+	color: orange;
+	text-shadow: 
+		5px 5px 5px rgb(91, 91, 91, 0.5),
+		9px 3px 5px rgb(64, 64, 204, 0.8);
+	text-align: center;
+	text-transform: capitalize;
+}
+
+section > h2 {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+#history-section > h2 {
+	font-weight: 700;
+	color: rgb(50, 50, 204);
+}
+
+#history-section > p {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 35px;
+
+	text-transform: uppercase;
+}
+
+#history-section > p + p {
+	font-weight: 300;
+	font-size: 20px;
+
+	color: rgb(116, 58, 116);
+	text-transform:lowercase;
+}
+
+#history-section > p > span {
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: rgb(70, 70, 163);
+}
+
+#history-section > p > p ~ p {
+	font-weight: 500;
+}
+
+#lake-legend {
+	font-family: "Lobster Two", sans-serif;
+}
+
+#lake-legend > h2 {
+	font-weight: 700;
+	color: rgb(202, 86, 173);
+	letter-spacing: 20px;
+}
+
+#lake-legend > p {
+	font-style: italic;
+	font-size: 18px;
+	text-transform: capitalize;
+	line-height: 25px;
+}
+
+#lake-legend > p ~ p {
+	font-family: "Amatic SC", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	word-spacing: 12px;
+}
+
+#lake-legend > p > span {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: rgb(202, 86, 173);;
+}
+
+article {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+}
+
+#Addition {
+	font-size: 30px;
+}
+
+article > h2 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.logo {
+	font-weight: 500;
+	font-size: 32px;
+}
+
+article > p {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+footer {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	text-shadow: 6px 4px 4px rgb(160, 20, 160);
+}
