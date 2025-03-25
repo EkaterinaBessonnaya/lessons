@@ -100,13 +100,15 @@ section > h2 {
 article {
 	font-family: "Poppins", sans-serif;
 	font-style: normal;
+
+	color: #1A1A1A;
 }
 
 #Addition {
 	font-size: 30px;
 }
 
-article > h2 {
+article > h3 {
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 30px;
@@ -120,6 +122,8 @@ article > h2 {
 article > p {
 	font-size: 18px;
 	line-height: 27px;
+
+	color:  #808080;
 }
 
 footer {
