@@ -1,0 +1,203 @@
+@import "reset.css";
+
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.main-title {
+	width: 100%;
+	font-weight: 700;
+	font-size: 25px;
+	color: rgb(88, 72, 72);
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.navigation {
+	width: 100%;
+	padding: 20px;
+	font-weight: 700;
+	font-size: 25px;
+	color: rgb(88, 72, 72);
+	line-height: 1.5;
+	text-align: right;
+}
+
+
+.container {
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 140px;
+	background-color: #231F8B;
+}
+
+p {
+	font-size: 14px;
+}
+
+.sub-title {
+	margin-bottom: 10px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+
+	color: #5A54F2;
+}
+
+.information-title {
+	margin-bottom: 10px;
+	font-family: "CircularStd", sans-serif;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+
+	color: #FFF;
+}
+
+.description {
+	margin-bottom: 70px;
+	font-family: "Circular Std", sans-serif;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 20px;
+	
+	color: #FFF;
+}
+
+.card {
+	display: inline-block;
+	margin-right: 30px;
+	max-width: 230px;
+	width: 100%;
+	padding: 35px 40px;
+	font-family: "Montserrat", sans-serif;
+	background-color: #FFF;
+}
+
+.card > p {
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	color: #737373;
+}
+
+.card-indent {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 48px;
+}
+
+.card-withBG {
+	background-color: #5A54F2;
+}
+
+.card-withBG > p {
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+	color: #FFF;
+}
+
+.card-withBG > span {
+	color: #FFF;
+}
+
+img {
+	margin-bottom: 20px;
+}
+
+.title {
+	margin-bottom: 20px;
+	font-family: "CircularStd";
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+}
+
+.black-title {
+	color: #252B42;
+}
+
+.white-title {
+	color: #FFF;
+}
+
+.decoration-line {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	margin-bottom: 20px;
+}
+
+.danger-color {
+	background-color: #E74040;
+}
+
+.ligth-color {
+	background-color: #FFF;
+}
+
+#experiments-section {
+	width: 100%;
+	margin: 0 auto;
+	padding: 70px;
+}
+
+.title-experiments {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.block-overflow {
+	max-width: 500px;
+	min-height: 50px;
+	margin-bottom: 20px;
+	overflow-x: auto;
+	white-space: nowrap;
+	margin-bottom: 50px;
+
+	color: #5A54F2;
+}
+
+.block {
+	display: inline-block;
+	margin-right: 50px;
+	max-width: 200px;
+}
+
+.color-red {
+	vertical-align: bottom;
+	margin-bottom: -40px;
+	color:#E74040;
+}
+
+.color-blue {
+	color: #231F8B;
+}
+
+.color-grey {
+	vertical-align: middle;
+	color: #737373;
+}
+
+.color-yellow {
+	vertical-align: top;
+	margin-top: -100px;
+	color: yellow;
+}
+
+.footer {
+	text-align: center;
+	font-family: "CircularStd";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	color: rgb(59, 122, 23);
+	text-shadow: 3px 5px 5px rgb(92, 17, 189);
+}
