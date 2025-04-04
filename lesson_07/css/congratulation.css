@@ -1,0 +1,14 @@
+img {
+	width: 50%;
+}
+
+.link {
+	font-family: "Inter", sans-serif;
+	font-size: 33px;
+	font-weight: 600;
+	margin-left: 50px;
+}
+
+.link:hover {
+	color: rgb(42, 128, 42);
+}

@@ -1,0 +1,340 @@
+@import "reset.css";
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+strong {
+	display: block;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.navigation {
+	margin-bottom: 20px;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 0;
+}
+
+.navigation > li {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+	margin-right: 20px;
+	color: rgb(111, 0, 255);
+}
+
+.navigation li > a:hover {
+	text-decoration-line: underline;
+	color: rgb(255, 81, 0);
+}
+
+.page > * {
+	margin-bottom: 70px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* ----------------------------people-section---------------------------------*/
+
+.people {
+	padding-top: 100px;
+	min-height: 762px;
+	background-color: #412672;
+}
+
+.people .container {
+	max-width: 1776px;
+}
+
+.people {
+	padding-top: 60px;
+}
+
+.people h1 {
+	margin-bottom: 31px;
+	font-size: 38px;
+	color: #FFF;
+}
+
+.people__person  {
+	font-size: 0;
+}
+
+.card {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 387px;
+	width: 100%;
+	min-height: 266px;
+	margin-right: 40px;
+	padding: 20px;
+	font-size: 15px;
+
+	background: #FFF;
+}
+
+.card:hover {
+	background: #FFBE48;;
+}
+
+.card:last-child {
+	margin-right: 0;
+}
+
+.person-photo {
+	height: 266px;
+}
+
+.card h3 {
+	font-size: 22px;
+	font-weight: 600;
+	color:#000;
+}
+
+.card p {
+	min-height: 76px;
+	height: 100%;
+	font-size: 15px;
+	line-height: 126%;
+	color: #4F4F4F;
+}
+
+.card a {
+	font-size: 15px;
+	line-height: 126%;
+	color: #FE3F3F;
+}
+
+.card a:hover {
+	color: #412672;
+	text-decoration-line: underline;
+}
+
+.people__person-without-beard > *,
+.people__person-girl > *,
+.people__person-with-beard > * {
+	margin-bottom: 16px;
+}
+
+.people__person-without-beard > *:last-child,
+.people__person-girl > *:last-child,
+.people__person-with-beard > *:last-child {
+	margin-bottom: 0;
+}
+
+.person-photo {
+	max-width: 347px;
+	width: 100%;
+}
+
+/* ----------------------------faculty-section---------------------------------*/
+
+.faculty {
+	font-size: 0;
+	color:#412672;
+}
+
+.faculty .container {
+	max-width: 1380px;
+}
+
+.faculty-information {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 520px;
+	margin-right: 50px;
+}
+
+.faculty h2 {
+	margin-bottom: 20px;
+	font-size: 34px;
+}
+
+.faculty p {
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.faculty ul > li {
+	font-size: 20px;
+	line-height: 255%;
+	color: #4F4F4F;
+}
+
+.faculty ul > li::before {
+	content: "";
+	width: 29px;
+	height: 29px;
+	background-image: url(../img/check-icon.svg);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.faculty__photo {
+	max-width: 744px;
+}
+
+/* ------------------------------game-section---------------------------------*/
+
+.game-section {
+	display: inline-block;
+	text-align: center;
+	min-width: 100%;
+	min-height: 700px;
+	padding: 100px 0;
+	background: url(../img/great_bg.jpeg) 0 0 / cover no-repeat;
+	color: #FFF;
+	font-weight: 600;
+}
+
+.game-section h2 {
+	font-size: 33px;
+	margin-bottom: 50px;
+}
+
+.game-section >*:not(.button, h2) {
+	visibility: hidden;
+}
+
+.button:hover + .block-one,
+.block-one:hover,
+.block-one:hover + .block-two,
+.block-two:hover,
+.block-two:hover + .block-three,
+.block-three:hover,
+.block-three:hover + .block-four,
+.block-four:hover,
+.block-four:hover + .block-five,
+.block-five:hover,
+.block-five:hover + .block-six,
+.block-six:hover,
+.block-six:hover + .block-seven,
+.block-seven:hover,
+.block-seven:hover + .block-eight,
+.block-eight:hover,
+.block-eight:hover + .block-nine,
+.block-nine:hover,
+.block-nine:hover ~ .game-section__link,
+.game-section__link:hover {
+	visibility: visible;
+}
+
+.button {
+	width: 150px;
+	height: 50px;
+	padding: 10px;
+	background-color: #FE3F3F;
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	box-shadow: 0 5px 0px 0px #000;
+}
+
+.button:hover {
+	box-shadow: 0 2px 0px 0px #000;
+}
+
+.block {
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 15px;
+	border: 1px solid green;
+	background: radial-gradient(circle, rgba(63,244,251,1) 0%, rgba(70,252,97,1) 55%);
+}
+
+.block-one {
+	width: 200px;
+	height: 50px;
+	margin-top: -50px;
+	margin-left: 389px;
+}
+
+.block-two {
+	width: 30px;
+	height: 130px;
+	margin-top: -2px;
+	margin-left: 380px;
+}
+
+.block-three {
+	width: 230px;
+	height: 30px;
+	margin-top: -2px;
+	margin-left: 390px;
+}
+
+.block-four {
+	width: 20px;
+	height: 220px;
+	margin-top: -5px;
+	margin-left: 610px;
+}
+
+.block-five {
+	width: 240px;
+	height: 25px;
+	margin-left: 610px;
+}
+
+.block-six {
+	width: 25px;
+	height: 240px;
+	margin-top: -25px;
+	margin-left: 849px;
+}
+
+.block-seven {
+	width: 490px;
+	height: 30px;
+	margin-top: -5px;
+	margin-left: 375px;
+}
+
+.block-eight {
+	width: 20px;
+	height: 150px;
+	margin-top: -20px;
+	margin-left: 357px;
+}
+
+.block-nine {
+	width: 250px;
+	height: 40px;
+	margin-top: -3px;
+	margin-left: 360px;
+}
+
+.game-section__link {
+	display: block;
+	margin-top: -40px;
+}
+
+.game-section__link:hover {
+	color: #FE3F3F;
+}
+
+.footer {
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	color: rgb(111, 0, 255);
+}
+
+.footer__link {
+	padding-left: 50px;
+}
+
+.footer__link:hover {
+	color: #FE3F3F;
+	text-decoration-line: underline;
+}
