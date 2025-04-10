@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/my_initial_favicon.png" sizes="32x32"
+			type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@0,400;0,700;1,400&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<title>web graphics lesson</title>
+	</head>
+			<body>
+				<div class="wrapper">
+					<header class="header">
+						<h1 class="header__title">web graphics lesson</h1>
+					</header>
+
+					<main class="page">
+						<div class="container">
+							<h2>Icons for content</h2>
+
+							<img src="img/people_team.svg" class="icon" alt="team of people icon">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/bell.svg" class="icon" alt="bell icon">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/curved_line.svg" class="icon" alt="curved_line icon">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/quotes.svg" class="icon" alt="bold quotes icon">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/satisfied_client.svg" class="icon"
+								alt="satisfied_client">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/silhouette_of_human.svg" class="icon"
+								alt="silhouette of human">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/mountains.svg" class="icon" alt="mountains icon">
+							<p>vector icon content, SVG</p>
+
+							<img src="img/medal.svg" class="icon" alt="medal icon">
+							<p>vector icon content, SVG</p>
+
+							<h2>Simple independent icons</h2>
+
+							<img src="img/arrow.svg" class="icon" alt="arow icon">
+							<p>simple vector icon, SVG</p>
+
+							<img src="img/plus.svg" class="icon" alt="plus icon">
+							<p>simple vector icon, SVG</p>
+
+							<h2>Raster images</h2>
+
+							<img src="img/logo1_avif.avif" class="logo" alt="logo image">
+							<p>raster img, logo, jpeg => avif</p>
+
+							<img src="img/nature_original__WEBP.webp"
+								alt="man stands on a hill and watching away">
+							<p>content raster img, jpeg => webp</p>
+
+							<img
+								srcset="img/man_with_glasses_2x.avif.avif 2x, img/man_with_glasses_3x.avif.avif 3x"
+								src="img/man_with_glasses_original.avif.avif"
+								alt="man with glasses smiling"
+								class="img-border-rounded">
+							<p>content raster img, DPR: 2x, DPR: 3x, jpeg => avif</p>
+
+							<picture>
+								<source srcset="img/two_people_original.avif.avif" type="image/avif">
+								<source srcset="img/two_people_original_WEBP.webp" type="image/webp">
+								<img
+									src="img/two_people_original.avif.avif"
+									alt="couple staying on hill and watching away among fog"
+									class="img-border">
+							</picture>
+
+							<p>content raster, alternative img, jpeg => webp and avif</p>
+						</div>
+					</main>
+					<footer class="footer">by Ekaterina Bessonnaya</footer>
+				</div>
+			</body>
+		</html>

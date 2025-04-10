@@ -1,0 +1,85 @@
+@import "./reset.css";
+
+body {
+	font-family: "Lobster Two", sans-serif;
+	background-image: url(../img/awesomeBG.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.header {
+	padding: 30px 0;
+}
+
+.header__title {
+	font-size: 70px;
+	text-align: center;
+	color: blueviolet;
+}
+
+.page {
+	width: 950px;
+	margin: 0 auto;
+	background-color: rgb(185, 212, 192);
+	padding: 20px;
+	box-shadow: 0px 0px 16px 3px rgb(37, 50, 125);
+}
+
+.page p {
+	font-size: 22px;
+	font-style: italic;
+	color: brown;
+	margin-bottom: 30px;
+}
+
+p:hover {
+	color: yellow;
+}
+
+.container {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.icon {
+	width: 69px;
+	height: 69px;
+	margin-bottom: 20px;
+}
+
+.icon:hover {
+	width: 99px;
+	height: 99px;
+}
+
+.img-border-rounded {
+	border-radius: 150px 0 150px 0;
+}
+
+.img-border {
+	border: 5px solid snow;
+}
+
+.footer {
+	padding: 20px 0;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	text-shadow: 2px 1px 2px #000;
+	color: blueviolet;
+}
