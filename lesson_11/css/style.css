@@ -1,0 +1,356 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	background-color: rgb(0, 0, 0, 0.6);
+
+	z-index: 2;
+}
+
+.header__title {
+	font-size: 30px;
+	font-weight: 700;
+	color: rgb(180, 88, 173);
+}
+
+.title:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+.page {
+	background-color: rgba(5, 5, 5, 0.2);
+}
+
+.experiments-section {
+	padding: 70px 0;
+}
+
+.experiments-section__container {
+	font-weight: 700;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.experiments-section__title {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.block {
+	background-color: rgba(205, 207, 55, 0.5);
+	box-shadow: 5px 3px 3px 4px rgb(0, 0, 0, 0.6);
+	font-size: 0;
+	padding: 15px 0;
+}
+
+.block__2D, .block__3D {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.block__square {
+	display: inline-block;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	transition: all 0.5s;
+	background-color: #6b7395;
+}
+
+.block__square:not(:last-child) {
+	margin-right: 30px;
+}
+
+.block__paragraph {
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-align: center;
+	color: antiquewhite;
+}
+
+/*----------------------------------2D-----------------------------*/
+
+.block__translate {
+	translate: 0 0;
+}
+
+.block__translate:hover {
+	translate: -10% -10%;
+}
+
+.block__scale:hover {
+	scale: -1 1;
+}
+
+.block__rotate:hover {
+	rotate: 360deg;
+}
+
+.block__skew:hover {
+	transform: skew(-10deg, -30deg);
+}
+
+.block__matrix:hover {
+	transform: rotate(95deg) translate(-50px, 50px);
+}
+
+.block__origin:hover {
+	transform: scale(1.3);
+	transform-origin: top right;
+}
+
+/*----------------------------------3D-----------------------------*/
+
+.block__square3D:not(:last-child) {
+	margin-right: 30px;
+	transition: all 0.5s;
+}
+
+.block__square3D {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	perspective: 200px;
+	transform-origin: center;
+	background-color: rgb(172, 49, 49, 0.3);
+}
+
+.block__rotate3D:hover {
+	transform: rotate3D(0, 1, 0, 80deg);
+}
+
+.block__translate3D:hover {
+	transform: translate3D(20px, 10px, 30px);
+}
+
+.block__transform-style--preserve {
+	transform-style: preserve-3d;
+}
+
+.block__transform-style:hover {
+	transform: rotateX(60deg);
+}
+
+.block__backface:hover {
+	backface-visibility: hidden;
+	transform: rotateY(100deg);
+}
+
+.block__scale-second:hover {
+ transform:	scale3D(0.5, 2, 2);
+}
+
+.block__multi:hover {
+	transform: rotate3D(0, 1, 1, 180deg) translate3D(0, 10px, 50px); /* doesn't work */
+	border-radius: 50%;
+}
+
+/*----------------------------------sea-----------------------------*/
+
+.sea {
+	background-image: url(../img/palm_trees_yellow_sand_beach.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.sea__container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.sea__title {
+	font-size: 26px;
+	font-weight: bold;
+	transform: translateY(500px) rotate(-90deg);
+	transform-origin: left;
+	
+	color: #495ba8;
+}
+
+.yacht {
+	perspective: 100px;
+}
+
+.yacht__container {
+	max-width: 950px;
+	min-height: 600px; /* sorry, but without this property I can't use Y-axis positioning */ 
+	transform: translateZ(-350px);
+}
+
+.yacht__hull {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	width: 400px;
+	height: 100px;
+	opacity: 0.8;
+	border-radius: 10px 10px 40px 40px;
+	background-color:#495ba8;
+}
+
+.yacht__hull:hover {
+	transform: rotate3d(1, 1, 1, 5deg);
+}
+
+.yacht__mast {
+	position: absolute;
+	width: 20px;
+	height: 400px;
+	bottom: 70%;
+	left: 40%;
+	background-color: black;
+	border-radius: 5px;
+	opacity: 0.6;
+}
+
+.yacht__sail-right {
+	position: absolute;
+	top: -35%;
+	left: 40%;
+	width: 0;
+	height: 0;
+
+	border-left: 0px solid transparent;
+	border-right: 220px solid transparent;
+	border-bottom: 300px solid rgb(49, 70, 139);
+	opacity: 0.5;
+}
+
+.yacht__sail-right:hover {
+	transform: rotateY(40deg);
+}
+
+.yacht__sail-left {
+	position: absolute;
+	top: -25%;
+	left: 19%;
+	width: 0;
+	height: 0;
+
+	border-left: 200px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 280px solid rgb(212, 201, 34);
+
+	opacity: 0.9;
+}
+
+.yacht__sail-left:hover {
+	transform: rotateY(30deg);
+}
+
+.transform {
+	position: absolute;
+
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 15px;
+	transform: skew(-45deg);
+}
+
+.transform--blue {
+	color: #495ba8;
+	bottom: 20%;
+	left: 20%;
+}
+
+.transform--orange {
+	color: rgb(196, 132, 37);
+	bottom: 25%;
+	left: 35%;
+}
+
+.transform--turquoise {
+	color: rgb(74, 175, 165);
+	bottom: 30%;
+	left: 50%;
+}
+
+.sun-position {
+	margin: 100px 0 0 100px;
+}
+
+.sun {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgb(194, 194, 73, 0.8);
+	transition: all 3s;
+}
+
+.sun:hover {
+	transform: rotate(360deg);
+}
+
+.sun__ray {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70px;
+	height: 10px;
+	border-radius: 5px;
+	transform-origin: left center;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+	background-color: rgb(194, 194, 73, 0.5);
+}
+
+.sun__ray:nth-child(1) {
+	width: 90px;
+	transform: rotate(5deg) translateX(45px);
+}
+
+.sun__ray:nth-child(2) {
+	transform: rotate(45deg) translateX(44px);
+}
+
+.sun__ray:nth-child(3) {
+	width: 90px;
+	transform: rotate(95deg) translateX(42px);
+}
+
+.sun__ray:nth-child(4) {
+	transform: rotate(145deg) translateX(45px);
+}
+
+.sun__ray:nth-child(5) {
+	width: 90px;
+	transform: rotate(190deg) translate(49px);
+}
+
+.sun__ray:nth-child(6) {
+	transform: rotate(235deg) translate(50px);
+}
+
+.sun__ray:nth-child(7) {
+	width: 90px;
+	transform: rotate(280deg) translate(50px);
+}
+
+.sun__ray:nth-child(8) {
+	transform: rotate(330deg) translate(50px);
+}
+
+.footer {
+	padding: 10px 0;
+	font-size: 17px;
+	text-align: center;
+	color: #28282c;
+
+	background: linear-gradient(0deg,rgba(34, 193, 195, 0.5) 0%, rgba(253, 187, 45, 0.5) 72%);
+}
+
