@@ -61,6 +61,10 @@ body {
 	margin-bottom: 50px;
 }
 
+.block__wrapper {
+	display: inline-block;
+}
+
 .block__square {
 	display: inline-block;
 	padding: 10px;
@@ -70,7 +74,7 @@ body {
 	background-color: #6b7395;
 }
 
-.block__square:not(:last-child) {
+.block__wrapper, .block__square:not(:last-child) {
 	margin-right: 30px;
 }
 
@@ -103,7 +107,7 @@ body {
 	transform: skew(-10deg, -30deg);
 }
 
-.block__matrix:hover {
+.block__wrapper:hover .block__matrix {
 	transform: rotate(95deg) translate(-50px, 50px);
 }
 
@@ -128,11 +132,11 @@ body {
 	background-color: rgb(172, 49, 49, 0.3);
 }
 
-.block__rotate3D:hover {
+.block__square3D:hover .block__rotate3D {
 	transform: rotate3D(0, 1, 0, 80deg);
 }
 
-.block__translate3D:hover {
+.block__square3D:hover .block__translate3D {
 	transform: translate3D(20px, 10px, 30px);
 }
 
@@ -140,20 +144,20 @@ body {
 	transform-style: preserve-3d;
 }
 
-.block__transform-style:hover {
+.block__square3D:hover .block__transform-style {
 	transform: rotateX(60deg);
 }
 
-.block__backface:hover {
+.block__square3D:hover .block__backface {
 	backface-visibility: hidden;
 	transform: rotateY(100deg);
 }
 
-.block__scale-second:hover {
+.block__square3D:hover .block__scale-second {
  transform:	scale3D(0.5, 2, 2);
 }
 
-.block__multi:hover {
+.block__square3D:hover .block__multi {
 	transform: rotate3D(0, 1, 1, 180deg) translate3D(0, 10px, 50px); /* doesn't work */
 	border-radius: 50%;
 }
@@ -353,4 +357,3 @@ body {
 
 	background: linear-gradient(0deg,rgba(34, 193, 195, 0.5) 0%, rgba(253, 187, 45, 0.5) 72%);
 }
-
