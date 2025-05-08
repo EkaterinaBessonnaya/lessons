@@ -177,7 +177,7 @@ body {
 
 .faculty__benefit-item::before {
 	content: "";
-	background-image: url(/img/check-icon.svg);
+	background-image: url(../img/check-icon.svg);
 
 	width: 29px;
 	height: 29px;
