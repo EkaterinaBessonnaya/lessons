@@ -1,0 +1,276 @@
+body {
+	font-family: "Inter", sans-serif;
+}
+
+[class*="__container"] {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+}
+
+.header__container {
+	margin-bottom: 20px;
+}
+
+.header__menu {
+	display: flex;
+	gap: 20px;
+}
+
+.header__item, .footer{
+	font-size: 20px;
+	font-weight: 700;
+	color: #412672;
+}
+
+.header__link:hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.page > * {
+	margin-bottom: 20px;
+}
+
+.page__title {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	will-change: opacity, transform;
+	animation: fade-and-zoom 5s ease forwards;
+	color: #412672;
+}
+
+@keyframes fade-and-zoom {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+	50% {
+		opacity: 0.5;
+		transform: scale(0.9);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+}
+
+/*--------------------------------teachers----------------------------------------- */
+
+.teachers {
+	background-color: #412672;
+}
+
+.teachers__title {
+	padding-top: 30px;
+	margin-bottom: 30px;
+	font-size: 38px;
+
+	color: #FFF;
+}
+
+.teachers__title > strong {
+	display: block;
+}
+
+.teachers__list {
+	display: flex;
+	gap: 20px;
+}
+
+.teacher__card {
+	display: flex;
+	flex-direction: column;
+
+	max-width: 347px;
+	padding: 20px;
+
+	background: #FFF;
+}
+
+.teacher__card:hover {
+	background-color: #FFBE48;
+	transition: background-color 0.5s;
+}
+
+.teacher__card > *:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.person__photo {
+	width: 347px;
+	height: 266px;
+}
+
+.teacher__name {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.teacher__description {
+	flex-grow: 1;
+	font-size: 15px;
+	line-height: 19px;
+
+	color: #4F4F4F;
+}
+
+.link {
+	font-size: 15px;
+	line-height: 19px;
+
+	color: #FE3F3F;
+}
+
+.link:hover {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+/*--------------------------------faculty----------------------------------------- */
+
+.faculty__container {
+	display: flex;
+	gap: 50px;
+	align-items: center;
+}
+
+.faculty__info {
+	max-width: 520px;
+	color: #412672;
+}
+
+.faculty__info > *:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.faculty__title {
+	font-size: 34px;
+}
+
+.faculty__description {
+	font-size: 22px;
+}
+
+.faculty__benefits-list {
+	font-size: 20px;
+	line-height: 20px;
+	color: #4F4F4F;
+}
+
+.faculty__benefit-item {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.faculty__benefit-item::before {
+	content: "";
+	background-image: url(/img/check-icon.svg);
+
+	width: 29px;
+	height: 29px;
+}
+
+.faculty__img {
+	will-change: transform;
+	transition: transform 0.5s ease;
+}
+
+.faculty__img:hover {
+	transform: scale(1.1);
+}
+
+/*--------------------------------achievements----------------------------------------- */
+
+.achievements {
+	background-color: #412672;
+	color: #FFF;
+}
+
+.achievements__container {
+	padding: 70px 0;
+}
+
+.achievements__title {
+	margin-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.achievements__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.achievement__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	line-height: 24px;
+	will-change: transform;
+	transition: transform 0.5s ease;
+}
+
+.achievement__item:hover {
+	transform: scale(1.1);
+}
+
+.achievement__info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.achievement__info > strong {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.achievement__info > span {
+	font-size: 15px;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 3px solid rgba(24, 23, 23, 0.8);
+}
+
+.circle::after {
+	content: "";
+	display: inline-block;
+	border: solid rgba(24, 23, 23, 0.8);
+	border-width: 0 4px 4px 0;
+	transform: rotate(-135deg);
+	padding: 10px;
+}
+
+.circle--position {
+	position: fixed;
+	right: 30px;
+	bottom: 10px;
+	z-index: 1;
+}
+
+.footer {
+	padding: 10px 0;
+	text-align: center;
+}
