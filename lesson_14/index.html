@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.png" sizes="32x32"
+			type="image/x-icon">
+		<title>Forms</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container"></div>
+			</header>
+
+			<main class="page">
+				<form method="post" action="#" enctype="multipart/form-data" class="form">
+					<div class="form__container">
+						<section class="billing">
+							<div class="billing__container">
+
+								<div class="billing__information">
+									<h1 class="billing__title title">Billing Information</h1>
+
+									<div class="billing__row input">
+
+										<div class="input__wrapper">
+											<label for="first-name" class="label label--indent">
+												First name
+											</label>
+											<input
+												type="text"
+												class="field"
+												placeholder="Your first name"
+												id="first-name">
+										</div>
+
+										<div class="input__wrapper">
+											<label for="last-name" class="label label--indent">Last name</label>
+											<input
+												type="text"
+												class="field"
+												placeholder="Your last name"
+												id="last-name">
+										</div>
+
+										<div class="input__wrapper">
+											<label for="company-name" class="label label--indent">
+												Company Name <span>(optional)</span>
+											</label>
+
+											<input
+												type="text"
+												class="field"
+												placeholder="Company name"
+												id="company-name">
+										</div>
+									</div>
+
+									<div class="input input--indent">
+										<label for="street-address" class="label label--indent">
+											StreetAddress
+										</label>
+										<input
+											type="text"
+											class="field input__stretch"
+											placeholder="Email" id="street-address">
+									</div>
+
+									<div class="billing__row select">
+										<div class="select__wrapper">
+
+											<label for="country" class="label label--indent">Country / Region</label>
+
+											<select name="form[select]" id="country" class="select__item field">
+												<option value="1">Select</option>
+												<option value="2">Ukraine</option>
+												<option value="3">USA</option>
+											</select>
+										</div>
+
+										<div class="select__wrapper">
+											<label for="states" class="label label--indent">States</label>
+
+											<select name="form[select]" id="states" class="select__item field">
+												<option value="1">Select</option>
+												<option value="2">Kherson</option>
+												<option value="3">Mykolaiv</option>
+												<option value="4">Kyiv</option>
+											</select>
+										</div>
+
+										<div class="input">
+											<label for="zip-code" class="label label--indent">Zip Code</label>
+											<input
+												type="text"
+												class="field"
+												placeholder="Zip Code"
+												id="zip-code">
+										</div>
+									</div>
+
+									<div class="billing__row input">
+										<div class="input__wrapper">
+
+											<label for="email" class="label label--indent">Email</label>
+											<input
+												type="email"
+												class="input__stretch field"
+												placeholder="Email Address"
+												id="email">
+										</div>
+
+										<div class="input__wrapper">
+
+											<label for="phone" class="label label--indent">Phone</label>
+											<input
+												type="tel"
+												class="input__stretch field"
+												placeholder="Phone number"
+												id="phone">
+										</div>
+									</div>
+
+									<label class="checkbox label">
+										<input type="checkbox" class="checkbox__input">
+										<span>Ship to a different address</span>
+									</label>
+								</div>
+
+								<div class="billing__additional">
+									<h2 class="billing__sub-title title">Additional Info</h2>
+
+									<div class="textarea">
+										<label for="order-notes" class="label label--indent">Order Notes (Optional)</label>
+										<textarea
+											name="form[textarea]"
+											id="order-notes"
+											class="textarea__item field"
+											placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="summary">
+							<div class="summary__container">
+
+								<div class="order order--indent">
+									<h2 class="order__title title">Order Summary</h2>
+
+									<ul class="order__list">
+										<li class="order__good">
+											<img src="img/green_capsicum.jpg" alt="green capsicum image"
+												class="order__img">
+
+											<h3 class="order__sub-title">
+												<span class="order__name">Green Capsicum</span>
+												<span class="order__quantity">x5</span>
+											</h3>
+											<div class="price">$70.00</div>
+										</li>
+
+										<li class="order__good">
+											<img src="img/red_capsicum.jpg" alt="red capsicum img"
+												class="order__img">
+
+											<h3 class="order__sub-title">
+												<span class="order__name">Red Capsicum</span>
+												<span class="order__quantity">x1</span>
+											</h3>
+											<div class="price">$14.00</div>
+										</li>
+									</ul>
+
+									<div class="order__sum">
+										<span>Subtotal:</span>
+										<div class="price">$84.00</div>
+									</div>
+
+									<div class="order__sum">
+										<span>Shipping:</span>
+										<div class="price">Free</div>
+									</div>
+
+									<div class="order__total">
+										<span>Total:</span>
+										<div class="price">$84.00</div>
+									</div>
+								</div>
+
+								<div class="payment">
+									<h2 class="payment__title title">Payment Method</h2>
+
+									<div class="payment__radio radio">
+										<div class="radio__wrapper">
+											<input type="radio" class="radio__item" name="form[payment]" id="delivery">
+											<label for="delivery" class="radio__label label">Cash on Delivery</label>
+										</div>
+
+										<div class="radio__wrapper">
+											<input type="radio" class="radio__item" name="form[payment]" id="paypal">
+											<label for="paypal" class="radio__label label">Paypal</label>
+										</div>
+
+										<div class="radio__wrapper">
+											<input type="radio" class="radio__item" name="form[payment]" id="amazon">
+											<label for="amazon" class="radio__label label">Amazon Pay</label>
+										</div>
+									</div>
+
+									<button type="submit" class="payment__button">Place Order</button>
+								</div>
+							</div>
+						</section>
+					</div>
+				</form>
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__logo">
+						<img src="img/zelena_gilochka.svg" alt="green twig logo"
+							class="footer__img">
+						<span class="footer__text">Ecobazar</span>
+					</div>
+
+					<div class="footer__copyright">
+						made by Ekaterina Bessonnaya
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
