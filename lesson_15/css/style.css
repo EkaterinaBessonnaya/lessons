@@ -15,8 +15,6 @@ body {
 	flex-direction: column;
 }
 
-.header {}
-
 .header__contaner {
 	background-image: url(../img/header_banner_tiny.jpg);
 	background-repeat: no-repeat;
@@ -65,12 +63,6 @@ body {
 	transition: 0.5s;
 }
 
-@media (max-width: 826px) {
-	.link {
-		color: violet;
-	}
-}
-
 .link::after {
   content: '';
   display: inline-block;
@@ -80,6 +72,24 @@ body {
   border-bottom: 3px solid #00B207;
   transform: rotate(-45deg);
   margin-left: 6px;
+}
+
+@media (max-width: 826px) {
+	.link {
+		color: violet;
+	}
+
+	.link::after {
+		border-right-color: violet;
+		border-bottom-color: violet;
+	}
+}
+
+@media (max-width: 420px) {
+	.link::after {
+		display: none;
+		content: none;
+	}
 }
 
 .icon {
@@ -377,8 +387,9 @@ body {
 
 .footer__container {
 	display: flex;
-	gap: 10px;
 	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
 	padding: 20px;
 	width: 100%;
 }
@@ -399,4 +410,18 @@ body {
 .footer__copyright {
 	text-transform: capitalize;
 	font-size: 28px;
+}
+
+@media (max-width: 992px) {
+	.footer {
+		font-size: 20px;
+	}
+
+	.footer__copyright {
+		font-size: 16px;
+	}
+
+	.footer__container {
+		padding: 10px;
+	}
 }
