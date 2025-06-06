@@ -240,14 +240,6 @@ body {
   gap: 24px;
 }
 
-@media (any-hover: hover) {
-  .link-btn {
-    border: 2px solid #00b207;
-    color: #00b207;
-    cursor: pointer;
-  }
-}
-
 @media (max-width: 1200px) {
   .products__list-top {
     display: grid;
