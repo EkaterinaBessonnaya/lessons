@@ -617,17 +617,17 @@ body {
   }
 
   .gallery__column--shift .gallery__img-wrapper {
-    width: 200px;
+     width: 100%;
     aspect-ratio: 1 / 1;
   }
 
   .gallery__column .gallery__img-wrapper {
-    width: 300px;
+     width: 100%;
     aspect-ratio: 1 / 1;
   }
 }
 
-@media (max-width: 988px) {
+@media (max-width: 866px) {
   .blossomia__gallery {
     display: flex;
     justify-content: center;
@@ -636,14 +636,62 @@ body {
     gap: 30px;
   }
 
+  .gallery__column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
   .gallery__price-wrapper {
     gap: 50px;
   }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 800px) {
   .gallery__title {
     padding: 10px 0 0 0;
     font-size: 24px;
+  }
+
+  .gallery__column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .gallery__column--shift .gallery__img {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery__column .gallery__img {
+    width: 250px;;
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery__name-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .gallery__action {
+    gap: 5px;
+  }
+
+  .icon__heart, .icon__shop {
+    width: 18px;
+    height: 18px;
+  }
+
+  .gallery__price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 558px) {
+  .gallery__column {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
