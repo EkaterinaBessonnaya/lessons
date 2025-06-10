@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>semantica</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container"></div>
+			</header>
+			<main class="page">
+				<section class="section">
+					<img src="img/orange_main.jpg" alt="juicy, delicious oranges"
+						class="section__img">
+
+					<ul class="section__meta-info meta">
+						<li class="meta__item">
+							<img src="img/icon/food.svg" alt="food icon" class="meta__icon">
+							<a href="#">food</a>
+						</li>
+
+						<li class="meta__item">
+							<img src="img/icon/user_icon.svg" alt="admin icon" class="meta__icon">
+							<a href="#">By Admin</a>
+						</li>
+
+						<li class="meta__item">
+							<img src="img/icon/comments.svg" alt="comments icon" class="meta__icon">
+							<a href="#">65 Comments</a>
+						</li>
+					</ul>
+
+					<h1 class="section__title">
+						Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.
+					</h1>
+
+					<header class="section__post-header post">
+						<figure class="post__author">
+							<img src="img/cameron.jpg" alt="Portrait of Cameron Williamson"
+								loading="lazy">
+
+							<figcaption class="post__info">
+								<data class="post__name-author" value="cameron williamson">Cameron Williamson</data>
+								<time datetime="2021-04-04" class="post__date">
+									4 April, 2021 • 6 min read
+								</time>
+							</figcaption>
+						</figure>
+
+						<ul class="post__social social">
+							<li class="social__link">
+								<a href="#" aria-label="share on facebook" target="_blank">
+									<img src="img/icon/facebook.svg" alt="facebook icon">
+								</a>
+							</li>
+
+							<li class="social__link">
+								<a href="#" aria-label="share on twitter" target="_blank">
+									<img src="img/icon/twitter.svg" alt="twitter">
+								</a>
+							</li>
+
+							<li class="social__link">
+								<a href="#" aria-label="share on pinterest" target="_blank">
+									<img src="img/icon/pinterest.svg" alt="pinterest icon">
+								</a>
+							</li>
+
+							<li class="social__link">
+								<a href="#" aria-label="share on instagram" target="_blank">
+									<img src="img/icon/instagram.svg" alt="instagram icon">
+								</a>
+							</li>
+
+							<li class="social__link">
+								<a href="#" aria-label="share on unrecognized social" target="_blank">
+									<img src="img/icon/unrecognized.svg" alt="unrecognized icon">
+								</a>
+							</li>
+						</ul>
+					</header>
+
+					<article class="post">
+						<h2 class="post__title">
+							Maecenas lacinia felis nec placerat sollicitudin.
+							Quisque placerat dolor at scelerisque imperdiet. Phasellus tristique
+							felis dolor.
+						</h2>
+
+						<p class="post__paragraph">
+							Maecenas elementum in risus sed condimentum. Duis convallis ante ac
+							tempus maximus. Fusce malesuada sed velit ut dictum. Morbi faucibus vitae
+							orci at euismod. Integer auctor augue in erat vehicula, quis fermentum ex
+							finibus.
+						</p>
+
+						<p class="post__paragraph">
+							Mauris pretium elit a dui pulvinar, in ornare sapien euismod. Nullam
+							interdum nisl ante, id feugiat quam euismod commodo. Sed ultrices lectus
+							ut iaculis rhoncus. Aenean non dignissim justo, at fermentum turpis. Sed
+							molestie, ligula ut molestie ultrices, tellus ligula viverra neque,
+							malesuada consectetur diam sapien volutpat risus.
+							Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit
+							amet erat quis ex convallis suscipit. ur ridiculus mus.
+						</p>
+
+						<div class="post__img-wrapper">
+							<img
+								src="img/orange_not_main.jpg"
+								alt="many oranges on image"
+								class="post__img"
+								loading="lazy">
+							<img src="img/mango.jpg" alt="two halves of cut mango" class="post__img">
+						</div>
+
+						<p class="post__paragraph">
+							Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis
+							vehicula ut, vestibulum ut mauris. Nullam non felis varius dui rutrum
+							rutrum in a nisi. Suspendisse elementum rutrum lorem sed luctus. Proin
+							iaculis euismod metus non sollicitudin. Duis vel luctus lacus. Nullam
+							faucibus iaculis convallis. In ullamcorper nibh ipsum, eget lacinia eros
+							pulvinar a. Integer accumsan arcu nec faucibus ultricies.
+						</p>
+					</article>
+
+					<article class="banner">
+						<img
+							src="img/sale_banner.jpg"
+							alt="summer sales banner with vegetables"
+							class="banner__img"
+							loading="lazy">
+
+						<div class="banner__info">
+							<span class="banner__subtitle">Summer Sales</span>
+							<h3 class="banner__title">Fresh Fruit</h3>
+
+							<a href="#" class="banner__link">Shop Now</a>
+						</div>
+
+						<div class="banner__discount">
+							<span>up to</span>
+							<strong class="banner__amount-discount">56%</strong>
+							<span>Off</span>
+						</div>
+					</article>
+				</section>
+
+				<section class="comments">
+					<article class="comments__form form">
+						<h2 class="form__title">Leave a Comment</h2>
+
+						<form action="#" method="post">
+							<div class="form__row">
+								<label for="name" class="form__label">Full Name</label>
+								<input
+									type="text"
+									id="name"
+									name="fullName"
+									placeholder="Zakir Hossen"
+									class="form__input"
+									required>
+
+								<label for="email" class="form__label">Email</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="zakirsoft.20@g|"
+									class="form__input"
+									required>
+							</div>
+
+							<label for="message">Message</label>
+							<textarea
+								name="comment"
+								id="message"
+								placeholder="Write your comment here…"
+								required></textarea>
+
+							<input
+								type="checkbox"
+								id="checkbox"
+								name="saveInfo"
+								required>
+							<label for="checkbox">
+								Save my name and email in this browser for the next time I comment.
+							</label>
+
+							<button class="form__button" type="submit">
+								Post Comments
+							</button>
+						</form>
+					</article>
+
+					<h2 class="comments__title">Comments</h2>
+
+					<ul class="comments__list comment">
+						<li class="comment__item">
+							<figure class="comment__person person">
+								<img
+									src="img/comments_annette.jpg"
+									alt="photo with Annette Black"
+									class="person__img"
+									loading="lazy">
+
+								<figcaption class="person__info">
+									<h3 class="person__name">Annette Black • </h3>
+									<time datetime="2021-04-26">26 Apr, 2021</time>
+								</figcaption>
+							</figure>
+
+							<q>
+								In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla
+								volutpat, metus eu aliquam malesuada, elit libero venenatis urna,
+								consequat maximus arcu diam non diam.
+							</q>
+						</li>
+
+						<li class="comment__item">
+							<figure class="comment__person person">
+								<img
+									src="img/comments_devon.jpg"
+									alt="photo with Devon Lane"
+									class="person__img"
+									loading="lazy">
+
+								<figcaption class="person__info">
+									<h3 class="person__name">Devon Lane • </h3>
+									<time datetime="2021-04-24">24 Apr, 2021</time>
+								</figcaption>
+							</figure>
+
+							<q>
+								Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc
+								sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut
+								aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta
+								nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.
+							</q>
+						</li>
+
+						<li class="comment__item">
+							<figure class="comment__person person">
+								<img
+									src="img/comments_jocobs_monarh.jpg"
+									alt="photo with Jacob Jones"
+									class="person__img"
+									loading="lazy">
+
+								<figcaption class="person__info">
+									<h3 class="person__name">Jacob Jones • </h3>
+									<time datetime="2021-04-20">20 Apr, 2021</time>
+								</figcaption>
+							</figure>
+
+							<q>
+								Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+								cubilia curae.
+							</q>
+						</li>
+
+						<li class="comment__item">
+							<figure class="comment__person person">
+								<img
+									src="img/comments_jane.jpg"
+									alt="photo with Jane Cooper"
+									class="person__img"
+									loading="lazy">
+
+								<figcaption class="person__info">
+									<h3 class="person__name">Jane Cooper • </h3>
+									<time datetime="2021-04-18">18 Apr, 2021</time>
+								</figcaption>
+							</figure>
+
+							<q>
+								Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum
+								elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis
+								turpis ac, volutpat imperdiet ex.
+							</q>
+						</li>
+
+						<li class="comment__item">
+							<figure class="comment__person person">
+								<img
+									src="img/comments_darrell.jpg"
+									alt="photo with Darrell Steward"
+									class="person__img"
+									loading="lazy">
+
+								<figcaption class="person__info">
+									<h3 class="person__name">Darrell Steward • </h3>
+									<time datetime="2021-04-07">7 Apr, 2021</time>
+								</figcaption>
+							</figure>
+
+							<q>Nulla molestie interdum ultricies.</q>
+						</li>
+					</ul>
+
+					<a href="#" class="comment__link">Load More</a>
+				</section>
+
+				<aside class="products">
+					<form action="#" class="products__search form" method="get">
+						<input type="search" placeholder="search" class="form__input">
+					</form>
+
+					<section class="products__categories categories">
+						<h3 class="categories__title">Top Categories</h3>
+
+						<ul class="categories__list category">
+							<li class="category__item">
+								<h4 class="category__type">Fresh Fruit</h4>
+								<data value="134">(134)</data>
+							</li>
+
+							<li class="category__item">
+								<h4 class="category__type">Vegetables</h4>
+								<data value="150">(150)</data>
+							</li>
+
+							<li class="category__item">
+								<h4 class="category__type">Cooking</h4>
+								<data value="54">(54)</data>
+							</li>
+
+							<li class="category__item">
+								<h4 class="category__type">Snacks</h4>
+								<data value="47">(47)</data>
+							</li>
+
+							<li class="category__item">
+								<h4 class="category__type">Beverages</h4>
+								<data value="43">(43)</data>
+							</li>
+
+							<li class="category__item">
+								<h4 class="category__type">Beauty & Health</h4>
+								<data value="38">(38)</data>
+							</li>
+
+							<li class="category__item">
+								<h4 class="category__type">Bread & Bakery</h4>
+								<data value="15">(15)</data>
+							</li>
+						</ul>
+					</section>
+
+					<section class="products__popular tags">
+						<h3 class="tags__title">Popular Tag</h3>
+
+						<ul class="tags__list tag">
+							<li class="tag__item">
+								<a href="#">Healthy</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Low fat</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Vegetarian</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Bread</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Kid foods</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Vitamins</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Snacks</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Tiffin</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Meat</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Lanch</a>
+							</li>
+
+							<li class="tag__item">
+								<a href="#">Dinner</a>
+							</li>
+						</ul>
+					</section>
+
+					<section class="products__gallery gallery">
+						<h3 class="gallery__title">Our Gallery</h3>
+
+						<ul class="gallery__list">
+							<li class="gallery__item">
+								<img
+									src="img/gallery_many_vegatables.jpg"
+									alt="photo with lots of brightly coloured vegetables"
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_broccoli.jpg"
+									alt="one lonely broccoli"
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_salad.jpg"
+									alt="a plate of delicious chopped vegetables."
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_pepers.jpg"
+									alt="three multi-coloured salad peppers drizzled with water"
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_carrots.jpg"
+									alt="photo with lots of young carrots"
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_peas.jpg"
+									alt="lonely pea pod on the table"
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_oranges.jpg"
+									alt="two oranges with a sprig"
+									loading="lazy">
+							</li>
+
+							<li class="gallery__item">
+								<img
+									src="img/gallery_courgette.jpg"
+									alt="photo with sliced courgette"
+									loading="lazy">
+							</li>
+						</ul>
+					</section>
+
+					<article class="new-posts posts">
+						<h3 class="posts__title">Recently Added</h3>
+
+						<ul class="posts__list post">
+							<li class="post__item">
+								<figure class="post__body">
+									<img
+										src="img/post_mango.jpg"
+										alt="two cutted mango on this photo"
+										class="post__photo"
+										loading="lazy">
+
+									<figcaption class="post__info">
+										<h4 class="post__title">
+											Curabitur porttitor orci eget nequ
+											accumsan.
+										</h4>
+
+										<time datetime="2021-04-25">Apr 25, 2021</time>
+									</figcaption>
+								</figure>
+							</li>
+
+							<li class="post__item">
+								<figure class="post__body">
+									<img
+										src="img/post_oranges.jpg"
+										alt="two oranges with a sprig"
+										class="post__photo"
+										loading="lazy">
+
+									<figcaption class="post__info">
+										<h4 class="post__title">
+											Donec mattis arcu faucibus suscipit viverra.
+										</h4>
+
+										<time datetime="2021-04-25">Apr 25, 2021</time>
+									</figcaption>
+								</figure>
+							</li>
+
+							<li class="post__item">
+								<figure class="post__body">
+									<img
+										src="img/post_blueberries.jpg"
+										alt="a plate of blueberries"
+										class="post__photo"
+										loading="lazy">
+
+									<figcaption class="post__info">
+										<h4 class="post__title">
+											Quisque posuere tempus rutrum. Integer velit ex.
+										</h4>
+
+										<time datetime="2021-04-25">Apr 25, 2021</time>
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</article>
+				</aside>
+			</main>
+			<footer></footer>
+		</div>
+	</body>
+</html>
